@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Mario Garcia</title>
   </head>
   <body>
     <div class="jumbotron">
@@ -18,4 +18,4 @@
   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
   <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 </div>
-    <h1>Mario Garcia</h1>
+    <h1>Hello, world!</h1>
