@@ -37,7 +37,7 @@
               <th>editar</th>
               <th>eliminar</th>
             </tr>
-            <?php foreach ($datos in $dato):?>
+            <?php foreach ($datos as $dato):?>
             <tr>
               <th><?hp echo $dato->nombre ?></th>
                <th><?hp echo $dato->apellido_paterno ?></th>
