@@ -15,3 +15,4 @@ class Miniproyecto extends BaseController
 		];
 		return view('listado',$data);
 	}
+}
