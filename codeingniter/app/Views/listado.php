@@ -52,7 +52,7 @@
         </div>
         </div>
         </div> 
-    <h1>AYUDAAAAAA!!!!!!!!!!!!!!11</h1>
+    <h1>Ya Paseme</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
