@@ -39,9 +39,9 @@
             </tr>
             <?php foreach ($datos as $dato):?>
             <tr>
-              <th><php echo $dato->nombre ?></th>
-               <th><php echo $dato->apellido_paterno ?></th>
-                 <th><php echo $dato->apellido_materno ?></th>
+              <th><?php echo $dato->nombre ?></th>
+               <th><?php echo $dato->apellido_paterno ?></th>
+                 <th><?php echo $dato->apellido_materno ?></th>
               <th> <a herf="<?php base_url('/index.php/editar') ?>" class="btn btn-sm btn-warning">editar</a></th>
               <th> <a herf="<?php base_url('/index.php/eliminar') ?>" class="btn btn-sm btn-danger">editar</a></th>
             </tr>
