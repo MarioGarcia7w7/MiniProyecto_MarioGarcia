@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>AYUDAAAAAAA!!!!!!!!!!!!!!!</title>
   </head>
   <body>
     <div class="container">
@@ -43,7 +43,7 @@
                <th><?php echo $dato->apellido_paterno ?></th>
                  <th><?php echo $dato->apellido_materno ?></th>
               <th> <a herf="<?php base_url('/index.php/editar') ?>" class="btn btn-sm btn-warning">editar</a></th>
-              <th> <a herf="<?php base_url('/index.php/eliminar') ?>" class="btn btn-sm btn-danger">editar</a></th>
+              <th> <a herf="<?php base_url('/index.php/eliminar') ?>" class="btn btn-sm btn-danger">Elimina</a></th>
             </tr>
             <?php endforeach ?>
             
@@ -52,7 +52,7 @@
         </div>
         </div>
         </div> 
-    <h1>Hello, world!</h1>
+    <h1>AYUDAAAAAA!!!!!!!!!!!!!!11</h1>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
