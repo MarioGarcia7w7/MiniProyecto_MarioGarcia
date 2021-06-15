@@ -8,51 +8,50 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>AYUDAAAAAAA!!!!!!!!!!!!!!!</title>
+    <title>Hello, world!</title>
   </head>
   <body>
     <div class="container">
       <h1>Agregar Registro</h1>
-      <div class="row">
-        <div class="col-sm-12">
-          <form action="">
-            <label for="nombre">nombre:</label>
-            <input type="tex" id="nombre" name "nombre" class="form-control" required>
-            <label for="apaterno">apellido paterno:</label>
-            <input type="text" id="apaterno" name="apaterno" class="form-control" required>
-            <label for=2nombre">apellido materno :</label>
-             <input type="text" id=amaterno" name="amaterno" class "form-control" required>
-              <button class="btn btn-primary form-xontrol">guardar</button>
-              </form>
-            </div>
-        </div>
-      <div class="row">
-      <div class="col-5m-12">
-        <div class="table table-responsive">
-          <table class="table table-hover table-bordered">
-            <tr>
-              <th>nombre</th>
-              <th>apelido paterno</th>
-              <th>apellido materno</th>
-              <th>editar</th>
-              <th>eliminar</th>
-            </tr>
-            <?php foreach ($datos as $dato):?>
-            <tr>
-              <th><?php echo $dato->nombre ?></th>
-               <th><?php echo $dato->apellido_paterno ?></th>
-                 <th><?php echo $dato->apellido_materno ?></th>
-              <th> <a herf="<?php base_url('/index.php/editar') ?>" class="btn btn-sm btn-warning">editar</a></th>
-              <th> <a herf="<?php base_url('/index.php/eliminar') ?>" class="btn btn-sm btn-danger">Elimina</a></th>
-            </tr>
-            <?php endforeach ?>
-            
-          </table>
-        </div>
-        </div>
-        </div>
-        </div> 
-    <h1>Ya Paseme</h1>
+     <div class="row">
+       <div class="col-sm-12">
+         <form action=" ">
+           <label for="nombre">Nombre:</label>
+           <input type="text" id="nombre" name="nombre" class="form-control" required>
+           <label for="apaterno">Apellido Paterno:</label>
+           <input type="text" id="apaterno" name="apaterno" class="form-control" required>
+           <label for="amaterno">Apellido Materno:</label>
+           <input type="text" id="amaterno" name="amaterno" class="form-control" required>
+           <button class="btn btn-primary form-control">Guardar</button>
+         </form>
+       </div>
+      </div>
+       <div class="row">
+         <div class="col-sm-12">
+            <div class="table table=resonsive">
+              <table class="table table-hover table-bordered">
+                <tr>
+                  <th>Nombre</th>
+                  <th>Apellido paterno</th>
+                  <th>Apellido materno</th>
+                  <th>Editar</th>
+                  <th>Eliminar</th>
+                </tr>
+                <?php foreach($datos as $dato): ?>
+                <tr> 
+                  <th><?php echo $dato->nombre ?></th>
+                  <th><?php echo $dato->apellido_paterno ?></th>
+                  <th><?php echo $dato->apellido_materno ?></th>
+                  <th> <a href="<?php base_url('/index.php/editar') ?>" class="btn btn-sm btn-warning">Editar</a> </th>
+                  <th> <a href="<?php base_url('/index.php/eliminar') ?>" class="btn btn-sm btn-danger">Eliminar</a> </th>
+                </tr>
+                <?php endforeach ?>
+              </table>
+           </div>
+         </div>
+      </div>
+                  
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
