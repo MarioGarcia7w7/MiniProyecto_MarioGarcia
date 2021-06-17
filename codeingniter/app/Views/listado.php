@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Hello hijo de perra!</title>
   </head>
   <body>
     <div class="container">
-      <h1>Agregar Registro</h1>
+      <h1>Agrega El Pinche Registro</h1>
      <div class="row">
        <div class="col-sm-12">
          <form action=" ">
@@ -32,8 +32,8 @@
               <table class="table table-hover table-bordered">
                 <tr>
                   <th>Nombre</th>
-                  <th>Apellido paterno</th>
-                  <th>Apellido materno</th>
+                  <th>Apellido de su papito</th>
+                  <th>Apellido de su mamita</th>
                   <th>Editar</th>
                   <th>Eliminar</th>
                 </tr>
