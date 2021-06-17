@@ -1,58 +1,69 @@
 <?php
-
 namespace App\Controllers;
+use App\Models\DatosModel;
 
-use CodeIgniter\Controller;
-use CodeIgniter\HTTP\CLIRequest;
-use CodeIgniter\HTTP\IncomingRequest;
-use CodeIgniter\HTTP\RequestInterface;
-use CodeIgniter\HTTP\ResponseInterface;
-use Psr\Log\LoggerInterface;
+class General extends BaseController{
+	
+	public function index(){
+		$gModel = new DatosModel();
+		$mensaje = session('mensaje');
+		$datos = $gModel ->listarTodo();
+		$mensaje = session('mensaje');
+		$datos =[$gModel->listarTodo();
+			 $data = ["datos" => $datos,
+                                  "mensaje"=>mensaje
+				 ];
+			 return view('listado',$data);
+			 }
+			 public funtion obtenerDatos($id){
+				 $gModel new DatosModel();
+			         $data = ["id" => $id];
+				 $respuesta = $gModel->obtenerInformacion($data);
+				 
+				 $datos =["datos"=>$respuesta];
+				 return view('actualizar',$datos);
 
-/**
- * Class BaseController
- *
- * BaseController provides a convenient place for loading components
- * and performing functions that are needed by all your controllers.
- * Extend this class in any new controllers:
- *     class Home extends BaseController
- *
- * For security be sure to declare any new methods as protected or private.
- */
-
-class BaseController extends Controller
-{
-	/**
-	 * Instance of the main Request object.
-	 *
-	 * @var IncomingRequest|CLIRequest
-	 */
-	protected $request;
-
-	/**
-	 * An array of helpers to be loaded automatically upon
-	 * class instantiation. These helpers will be available
-	 * to all other controllers that extend BaseController.
-	 *
-	 * @var array
-	 */
-	protected $helpers = [];
-
-	/**
-	 * Constructor.
-	 *
-	 * @param RequestInterface  $request
-	 * @param ResponseInterface $response
-	 * @param LoggerInterface   $logger
-	 */
-	public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
-	{
-		// Do Not Edit This Line
-		parent::initController($request, $response, $logger);
-
-		//--------------------------------------------------------------------
-		// Preload any models, libraries, etc, here.
-		//--------------------------------------------------------------------
-		// E.g.: $this->session = \Config\Services::session();
-	}
-}
+			 }
+			 public funtion insertar (){
+				 $gModel=new DatosModel();
+				 $data=[
+					 "nombre" =>$_POST['nombre'],
+					 "a_paterno"=> $_POST['apaterno'],
+					 "a_materno"=> $_POST['amaterno'],
+				 ];
+				 $respuesta = $gModel->insertar($data);
+				 if ($respuesta > 0){
+					 return redirect()-> to (base_url('/index.php'))->with('mensaje','0');
+				 }else{
+					 return redirect()-> to (base_url('/index.php'))->with('mensaje','1');
+				 }
+			 }
+			 
+			 public funtion actualizar();
+			 $gModel = new GeneralModel();
+			 $data = [
+				 "nombre" =>$_POST['nombre'],
+				 "a_paterno"=>$POST['apaterno'];
+				 "a_materno"=>$POST['amaterno'];
+				 ];
+			 $id = ["id" => $_POST['id']];
+			 $respuesta = $gModel->actualizar($data,$id);
+			 if ($respuesta){
+				 return redirect ()->to(base_url('/index.php'))->with('mensaje','2');
+			 }else{
+				  return redirect ()->to(base_url('/index.php'))->with('mensaje','3');
+			 }
+			 }
+			 public funtion eliminar($idPersona){
+				 $gModel = new DatosModel();
+				 $id = ["id" =>$idPersona];
+				 $respuesta = $gModel->eliminar($id);
+				 
+				 if($respuesta){
+					 return redirect ()->to(base_url('index,php'))->with('mensaje','4');
+				 }else{
+					 return redirect ()->to(base_url('index,php'))->with('mensaje','5'); 
+				 }
+				 
+			 }
+			 }
