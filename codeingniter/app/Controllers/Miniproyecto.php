@@ -23,8 +23,9 @@ class General extends BaseController
 		
 		$datos = ["datos" => $respuesta];
 		return view('actualizar', $datos);
-		
 	}
+}
+		
         public function insertar(){
 		$model = new DatosModel();
 		$data = [
